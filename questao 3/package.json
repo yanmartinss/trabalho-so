@@ -1,0 +1,18 @@
+{
+  "name": "vetroom-sim",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Simulador de sala de repouso (DOGS vs CATS) com FIFO global.",
+  "bin": {
+    "vetroom": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "run:file": "node ./src/index.js ./input.json",
+    "run:stdin": "node ./src/index.js < ./input.json",
+    "check": "node -e \"import('./src/index.js')\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
